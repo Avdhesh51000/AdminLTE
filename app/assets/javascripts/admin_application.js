@@ -1,0 +1,12 @@
+//= require popper.js
+//= require jquery
+//= require jquery_ujs
+//= require jquery.validate
+//= require jquery.validate.additional-methods
+//= require alertify
+//= require app
+//= require admin/moment
+//= require daterangepicker
+//= require bootstrap.min.js
+//= require_tree ../../../vendor/assets/javascripts
+//= require_self

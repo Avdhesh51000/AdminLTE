@@ -65,3 +65,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Added Later
 gem 'pry'
 gem 'alertifyjs-rails'
+gem 'adminlte2-rails'
+gem 'jquery-rails'
+gem 'jquery-validation-rails'
+gem 'paranoia', "~>2.2"
+gem 'popper_js'
+gem 'will_paginate'
+

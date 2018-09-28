@@ -1,0 +1,17 @@
+//= require jquery-jvectormap-1.2.2.min
+//= require jquery-jvectormap-world-mill-en
+//= require jquery.sparkline
+//= require bootstrap-slider
+//= require bootstrap3-wysihtml5
+//= require moment
+//= require fullcalendar
+//= require jquery.knob
+//= require bootstrap-timepicker
+//= require pace
+//= require morris
+//= require daterangepicker
+//= require bootstrap-colorpicker
+//= require bootstrap-datepicker
+//= require toastr.min
+//= require jquery.slimscroll
+//= require bootstrap.min.js

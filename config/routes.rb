@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
   resources :home
-  root to: 'home#index'
+  root to: 'home#index' 
+
+  namespace :admin do
+  #resources :articles, :comments
+    root 'session#new'
+  end
 end
