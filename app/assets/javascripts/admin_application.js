@@ -6,6 +6,8 @@
 //= require alertify
 //= require app
 //= require admin/moment
+//= require moment
+//= require bootstrap-datetimepicker
 //= require daterangepicker
 //= require bootstrap.min.js
 //= require_tree ../../../vendor/assets/javascripts

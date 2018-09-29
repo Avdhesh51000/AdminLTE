@@ -72,5 +72,6 @@ gem 'paranoia', "~>2.2"
 gem 'popper_js'
 gem 'will_paginate'
 gem 'paranoia', "~>2.2" 
-
+gem 'momentjs-rails'
+gem 'bootstrap3-datetimepicker-rails'
 

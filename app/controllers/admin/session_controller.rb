@@ -23,4 +23,9 @@ class Admin::SessionController < AdminApplicationController
 		admin_log_out
 		flash[:success] = "Logout successfully."
 	end
+
+    #Method for 
+	def forgot_password
+		
+	end
 end

@@ -9,5 +9,6 @@ Rails.application.routes.draw do
    resources :dashboard
    resources :users   
    root 'session#new'
+   get '/forgotpassword', to: 'session#forgot_password'
   end
 end

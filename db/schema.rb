@@ -16,8 +16,10 @@ ActiveRecord::Schema.define(version: 2018_09_29_062747) do
   enable_extension "plpgsql"
 
   create_table "admin_users", force: :cascade do |t|
-    t.string "name"
+    t.string "first_name", default: ""
+    t.string "last_name", default: ""
     t.string "email", default: ""
+    t.string "role", default: ""
     t.string "password_digest", default: ""
     t.string "admin_token"
     t.string "profile_pic", default: ""
