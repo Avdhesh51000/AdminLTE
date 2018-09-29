@@ -2,11 +2,11 @@
 <header class="main-header">
 
   <!-- Logo -->
-  <a href="/" class="logo">
+  <a href="/admin/dashboard" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>A</b>LT</span>
+    <span class="logo-mini"><b>I</b>CO</span>
     <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>Admin</b>LTE</span>
+    <span class="logo-lg"><b>ICO</b>Development</span>
   </a>
 
   <!-- Header Navbar -->
@@ -47,7 +47,8 @@
                 <a href="#" class="btn btn-default btn-flat">Profile</a>
               </div>
               <div class="pull-right">
-                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                <a href="/admin/session/<%= current_admin_user.id %>" class="btn btn-default btn-flat" data-method="delete">Sign out</a>
+                <%#= link_to 'Destroy', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %>
               </div>
             </li>
           </ul>

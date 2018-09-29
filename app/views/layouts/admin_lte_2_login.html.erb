@@ -7,8 +7,7 @@
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <%= stylesheet_link_tag    'admin_application', media: 'all', 'data-turbolinks-track' => true %>
-
- <%= javascript_include_tag 'admin_application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'admin_application', 'data-turbolinks-track' => true %>
   <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,18 +20,18 @@
 <body class="login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="/"><b>Admin</b>LTE</a>
+    <a href="/"><b>ICO</b>Development</a>
   </div><!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= form_with scope: :admin ,url: admin_session_index_path,method: :post ,id: "admin_login_page", local: true do |f| %>
       <div class="form-group has-feedback">
-        <%= f.text_field :email, class: 'form-control', autofocus: true %>
+        <%= f.text_field :email, class: 'form-control',placeholder: 'Email', autofocus: true %>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
 
       <div class="form-group has-feedback">
-        <%= f.password_field :password, class: 'form-control', autocomplete: 'off' %>
+        <%= f.password_field :password, class: 'form-control',placeholder: 'Password', autocomplete: 'off' %>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -45,12 +44,12 @@
         </div><!-- /.col -->
         <div class="col-xs-4">
           <%= f.submit 'Log in', class: 'btn btn-primary btn-block btn-flat' %>
-
         </div><!-- /.col -->
       </div>
 
     <% end %>
-  </div><!-- /.login-box-body -->
+  </div>
+  <!-- /.login-box-body -->
 </div><!-- /.login-box -->
 
 <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>

@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   root to: 'home#index' 
 
   namespace :admin do
-  #resources :articles, :comments
-    root 'session#new'
+   resources :session
+   resources :dashboard
+   resources :users   
+   root 'session#new'
   end
 end
